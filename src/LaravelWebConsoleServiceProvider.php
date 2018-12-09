@@ -22,7 +22,7 @@ class LaravelWebConsoleServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/../routes/routes.php');
 
         $this->publishes([
-            __DIR__.'/../config/laravelwebconsole.php' => config_path('webconsole.php')
+            __DIR__.'/../config/laravelwebconsole.php' => config_path('webconsole.php'),
         ], 'webconsole');
     }
 
@@ -63,13 +63,12 @@ class LaravelWebConsoleServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register helpers file
+     * Register helpers file.
      */
     public function registerHelpers()
     {
         // Load the helpers in app/Http/helpers.php
-        if (file_exists($file = __DIR__.'/../helpers.php'))
-        {
+        if (file_exists($file = __DIR__.'/../helpers.php')) {
             require_once $file;
         }
     }

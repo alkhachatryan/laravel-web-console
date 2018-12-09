@@ -1,28 +1,34 @@
 <?php
 
 
-function is_empty_string($string) {
+function is_empty_string($string)
+{
     return strlen($string) <= 0;
 }
 
-function is_equal_strings($string1, $string2) {
+function is_equal_strings($string1, $string2)
+{
     return strcmp($string1, $string2) == 0;
 }
 
-function get_hash($algorithm, $string) {
+function get_hash($algorithm, $string)
+{
     return hash($algorithm, trim((string) $string));
 }
 
 // Command execution
-function execute_command($command) {
-    $descriptors = array(
-        0 => array('pipe', 'r'), // STDIN
-        1 => array('pipe', 'w'), // STDOUT
-        2 => array('pipe', 'w')  // STDERR
-    );
+function execute_command($command)
+{
+    $descriptors = [
+        0 => ['pipe', 'r'], // STDIN
+        1 => ['pipe', 'w'], // STDOUT
+        2 => ['pipe', 'w'],  // STDERR
+    ];
 
-    $process = proc_open($command . ' 2>&1', $descriptors, $pipes);
-    if (!is_resource($process)) die("Can't execute command.");
+    $process = proc_open($command.' 2>&1', $descriptors, $pipes);
+    if (! is_resource($process)) {
+        die("Can't execute command.");
+    }
 
     // Nothing to push to STDIN
     fclose($pipes[0]);
@@ -40,10 +46,11 @@ function execute_command($command) {
 }
 
 // Command parsing
-function parse_command($command) {
+function parse_command($command)
+{
     $value = ltrim((string) $command);
 
-    if (!is_empty_string($value)) {
+    if (! is_empty_string($value)) {
         $values = explode(' ', $value);
         $values_total = count($values);
 
@@ -53,8 +60,11 @@ function parse_command($command) {
             for ($index = $values_total - 2; $index >= 0; $index--) {
                 $value_item = $values[$index];
 
-                if (substr($value_item, -1) == '\\') $value = $value_item . ' ' . $value;
-                else break;
+                if (substr($value_item, -1) == '\\') {
+                    $value = $value_item.' '.$value;
+                } else {
+                    break;
+                }
             }
         }
     }

@@ -28,13 +28,11 @@ return [
     // Disable login (don't ask for credentials, be careful)
     'no_login' => false,
 
-
     // Single-user credentials (REQUIRED)
     'user' => [
         'name' => env('CONSOLE_USER_NAME', 'root'),
-        'password' => env('CONSOLE_USER_PASSWORD', 'root')
+        'password' => env('CONSOLE_USER_PASSWORD', 'root'),
     ],
-
 
     // Multi-user credentials (OPTIONAL)
     // Example: 'user' => 'password', 'user1' => 'password1'
@@ -45,7 +43,6 @@ return [
     // Hash incoming password
     // By default it's sha256
     'password_hash_algorithm' => '',
-
 
     // Home directory (multi-user mode supported)
     // Example: 'home_dir' => '/tmp';
