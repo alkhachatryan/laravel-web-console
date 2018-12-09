@@ -82,7 +82,7 @@ If you discover any security related issues, please email info@khachatryan.org i
 
 ## License
 
-MIT. Please see the [license file](license.md) for more information.
+MIT. Please see the [license file](license) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/alkhachatryan/laravel-web-console.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/alkhachatryan/laravel-web-console.svg?style=flat-square
