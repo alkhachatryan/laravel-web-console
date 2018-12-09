@@ -1,0 +1,38 @@
+{
+    "name": "alkhachatryan/laravel-web-console",
+        "description": "Web console for your Laravel application",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Khachatryan",
+            "email": "info@khachatryan.org",
+            "homepage": "https://khachatryan.org"
+        }
+    ],
+    "homepage": "https://github.com/alkhachatryan/laravel-web-console",
+    "keywords": ["Laravel", "LaravelWebConsole"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "files": [
+            "helpers.php"
+        ],
+        "psr-4": {
+            "Alkhachatryan\\LaravelWebConsole\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alkhachatryan\\LaravelWebConsole\\LaravelWebConsoleServiceProvider"
+            ]
+        }
+    }
+}
