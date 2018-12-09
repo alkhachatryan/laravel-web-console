@@ -91,7 +91,6 @@ MIT. Please see the [license file](license.md) for more information.
 
 [link-packagist]: https://packagist.org/packages/alkhachatryan/laravel-web-console
 [link-downloads]: https://packagist.org/packages/alkhachatryan/laravel-web-console
-[link-travis]: https://travis-ci.org/alkhachatryan/laravel-web-console
-[link-styleci]: https://styleci.io/repos/12345678
+[link-styleci]: https://github.styleci.io/repos/161024221
 [link-author]: https://github.com/alkhachatryan
 [link-contributors]: ../../contributors]
