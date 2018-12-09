@@ -86,8 +86,7 @@ MIT. Please see the [license file](license.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/alkhachatryan/laravel-web-console.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/alkhachatryan/laravel-web-console.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/alkhachatryan/laravel-web-console/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-styleci]: https://styleci.io/repos/161024221/shield
 
 [link-packagist]: https://packagist.org/packages/alkhachatryan/laravel-web-console
 [link-downloads]: https://packagist.org/packages/alkhachatryan/laravel-web-console
