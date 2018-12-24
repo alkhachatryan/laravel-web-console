@@ -1,10 +1,7 @@
 # LaravelWebConsole
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
 [![StyleCI][ico-styleci]][link-styleci]
-
-
 ![TESTED OS](https://img.shields.io/badge/Tested%20OS-Linux-brightgreen.svg)
 ![LARAVEL VERSION](https://img.shields.io/badge/Laravel%20Version-5.7.*-brightgreen.svg)
 
@@ -12,7 +9,12 @@ Laravel Web Console is a package for Laravel applications that allow user to con
 
 ![Screenshot](screenshot.png)
 
+## What is this package useful for?
+
+Despite the fact that cloud hosting is now growing up and many people use VPS / Dedicated Server hosting, most people still use Sharing hosting without SSH connection. Using this package you can execute shell commands from your browser. Using Laravel Middleware features you can protect your system from danger from outside.
+
 ## Features
+
 * Enable / Disable custom login
 * Multi-account support
 * Home dir selection
@@ -23,29 +25,43 @@ Laravel Web Console is a package for Laravel applications that allow user to con
 
 ## Installation
 
-Via Composer
+Manually:
+
+- Download the last release: https://github.com/alkhachatryan/laravel-web-console/releases/latest
+- Upload the comporessed file to the server.
+- Unzip the files into /vendor/alkhachatryan/laravel-web-console
+- Add maintance for this package into composer autoloaders
+
+
+Or Via Composer:
 
 ``` bash
 $ composer require alkhachatryan/laravel-web-console
 ```
 
+
+
+
 ## Configuration
 
 Publish the config file
 
-```bash
-php artisan vendor:publish --tag=webconsole
-```
+- Copy /vendor/alkhachatryan/laravel-web-console/config file to your /config folder
 
-Edit the /config/webconsole.php file, create your credentials in .env file.
+  OR via command line: 
+  ```bash
+  php artisan vendor:publish --tag=webconsole
+  ```
 
-```php
-// Single-user credentials (REQUIRED)
-    'user' => [
-        'name' => env('CONSOLE_USER_NAME', 'root'),
-        'password' => env('CONSOLE_USER_PASSWORD', 'root')
-    ],
-```
+- Edit the /config/webconsole.php file, create your credentials in .env file.
+
+  ```php
+  // Single-user credentials (REQUIRED)
+      'user' => [
+          'name' => env('CONSOLE_USER_NAME', 'root'),
+          'password' => env('CONSOLE_USER_PASSWORD', 'root')
+      ],
+  ```
 
 !!! ATTENTION !!!!
 These user credentials ARE NOT your server user credentials.
@@ -98,11 +114,8 @@ If you discover any security related issues, please email info@khachatryan.org i
 MIT. Please see the [license file](license) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/alkhachatryan/laravel-web-console.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/alkhachatryan/laravel-web-console.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/161024221/shield
-
 [link-packagist]: https://packagist.org/packages/alkhachatryan/laravel-web-console
-[link-downloads]: https://packagist.org/packages/alkhachatryan/laravel-web-console
 [link-styleci]: https://github.styleci.io/repos/161024221
 [link-author]: https://github.com/alkhachatryan
 [link-contributors]: ../../contributors]
