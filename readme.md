@@ -84,6 +84,15 @@ If you discover any security related issues, please email info@khachatryan.org i
 
 - [Alexey Khachatryan][link-author]
 
+## Open source tools included
+
+- jQuery JavaScript Library: https://github.com/jquery/jquery
+- jQuery Terminal Emulator: https://github.com/jcubic/jquery.terminal
+- jQuery Mouse Wheel Plugin: https://github.com/brandonaaron/jquery-mousewheel
+- PHP JSON-RPC 2.0 Server/Client Implementation: https://github.com/sergeyfast/eazy-jsonrpc
+- Normalize.css: https://github.com/necolas/normalize.css
+- Nickola/Web-console https://github.com/nickola/web-console
+
 ## License
 
 MIT. Please see the [license file](license) for more information.
