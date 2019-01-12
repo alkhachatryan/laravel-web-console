@@ -44,9 +44,9 @@ class WebConsoleRPCServer extends BaseJsonRpcServer
     {
         parent::__construct($instance);
 
-        $this->no_login = config('webconsole.no_login');
-        $this->home_dir_conf = config('webconsole.home_dir');
-        $this->accounts = config('webconsole.accounts');
+        $this->no_login = config('laravelwebconsole.no_login');
+        $this->home_dir_conf = config('laravelwebconsole.home_dir');
+        $this->accounts = config('laravelwebconsole.accounts');
         $this->password_hash_algorithm = config('webconsole.password_hash_algorithm');
 
         // Initializing
