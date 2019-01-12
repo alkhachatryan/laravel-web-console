@@ -22,7 +22,7 @@ class LaravelWebConsoleServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/../routes/routes.php');
 
         $this->publishes([
-            __DIR__.'/../config/laravelwebconsole.php' => config_path('webconsole.php'),
+            __DIR__.'/../config/laravelwebconsole.php' => config_path('laravelwebconsole.php'),
         ], 'webconsole');
     }
 
