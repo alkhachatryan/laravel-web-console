@@ -28,7 +28,7 @@ Despite the fact that cloud hosting is now growing up and many people use VPS / 
 Manually:
 
 - Download the last release: https://github.com/alkhachatryan/laravel-web-console/releases/latest
-- Upload the comporessed file to the server.
+- Upload the compressed file to the server.
 - Unzip the files into /vendor/alkhachatryan/laravel-web-console  (Without version number)
 - Add maintance for this package into composer autoloaders
   -- In /vendor/composer/autoload_namespaces.php add in the array this line:
