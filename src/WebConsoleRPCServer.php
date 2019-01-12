@@ -47,18 +47,18 @@ class WebConsoleRPCServer extends BaseJsonRpcServer
         $this->no_login = config('laravelwebconsole.no_login');
         $this->home_dir_conf = config('laravelwebconsole.home_dir');
         $this->accounts = config('laravelwebconsole.accounts');
-        $this->password_hash_algorithm = config('webconsole.password_hash_algorithm');
+        $this->password_hash_algorithm = config('laravelwebconsole.password_hash_algorithm');
 
         // Initializing
 
-        if (config('webconsole.user.name') && config('webconsole.user.password')) {
-            $this->accounts[config('webconsole.user.name')] = config('webconsole.user.password');
+        if (config('laravelwebconsole.user.name') && config('laravelwebconsole.user.password')) {
+            $this->accounts[config('laravelwebconsole.user.name')] = config('laravelwebconsole.user.password');
         }
 
         $this->is_configured = ($this->no_login || count($this->accounts) >= 1) ? true : false;
 
         if (! $this->is_configured) {
-            throw new \Exception('Webconsole not configured. Please see: /config/webconsole.php');
+            throw new \Exception('Webconsole not configured. Please see: /config/laravelwebconsole.php');
         }
     }
 
