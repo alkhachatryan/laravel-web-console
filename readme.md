@@ -29,9 +29,23 @@ Manually:
 
 - Download the last release: https://github.com/alkhachatryan/laravel-web-console/releases/latest
 - Upload the comporessed file to the server.
-- Unzip the files into /vendor/alkhachatryan/laravel-web-console
+- Unzip the files into /vendor/alkhachatryan/laravel-web-console  (Without version number)
 - Add maintance for this package into composer autoloaders
-
+  -- In /vendor/composer/autoload_namespaces.php add in the array this line:
+  ```php 
+   'Alkhachatryan\\LaravelWebConsole\\' => array($vendorDir . '/alkhachatryan/laravel-web-console/src'),
+  ```
+  -- In /vendor/composer/autoload_psr4.php add in the array this line:
+  ```php 
+   'Alkhachatryan\\LaravelWebConsole\\' => array($vendorDir . '/alkhachatryan/laravel-web-console/src'),
+  ```
+- Update the /config/app.php and add the service provider into providers array
+  ```php 
+  Alkhachatryan\LaravelWebConsole\LaravelWebConsoleServiceProvider::class,
+  ```
+- Remove the cache: delete the following files:
+  /bootstrap/cache/packages.php
+  /bootstrap/cache/services.php
 
 Or Via Composer:
 
@@ -53,7 +67,7 @@ Publish the config file
   php artisan vendor:publish --tag=webconsole
   ```
 
-- Edit the /config/webconsole.php file, create your credentials in .env file.
+- Edit the /config/laravelwebconsole.php file, create your credentials in .env file.
 
   ```php
   // Single-user credentials (REQUIRED)
