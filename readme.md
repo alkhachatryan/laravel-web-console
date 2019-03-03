@@ -3,7 +3,6 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![StyleCI][ico-styleci]][link-styleci]
 ![TESTED OS](https://img.shields.io/badge/Tested%20OS-Linux-brightgreen.svg)
-![LARAVEL VERSION](https://img.shields.io/badge/Laravel%20Version-5.7.*-brightgreen.svg)
 
 Laravel Web Console is a package for Laravel applications that allow user to connect to the server via browser. 
 
@@ -21,7 +20,9 @@ Despite the fact that cloud hosting is now growing up and many people use VPS / 
 * Home dir selection for multiple accounts
 * Custom password hashing
 
-
+## Supported Laravel Versions
+* 5.7.*
+* 5.8.*
 
 ## Installation
 
