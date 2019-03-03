@@ -42,3 +42,9 @@ All notable changes to `LaravelWebConsole` will be documented in this file.
 
 ### What is new;
 - Bug fix
+
+## Version 1.5.1
+
+### What is new;
+- Checked the package on Laravel 5.8.*
+- Updated README.md
