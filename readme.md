@@ -3,6 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![StyleCI][ico-styleci]][link-styleci]
 ![TESTED OS](https://img.shields.io/badge/Tested%20OS-Linux-brightgreen.svg)
+[![Total Downloads][ico-downloads]][link-downloads]
 
 Laravel Web Console is a package for Laravel applications that allow user to connect to the server via browser. 
 
@@ -134,3 +135,5 @@ MIT. Please see the [license file](license) for more information.
 [link-styleci]: https://github.styleci.io/repos/161024221
 [link-author]: https://github.com/alkhachatryan
 [link-contributors]: ../../contributors]
+[ico-downloads]: https://img.shields.io/packagist/dt/alkhachatryan/laravel-web-console.svg?style=flat-square
+[link-downloads]: https://packagist.org/packages/alkhachatryan/laravel-web-console
