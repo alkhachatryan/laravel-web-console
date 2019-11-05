@@ -1,6 +1,5 @@
 <?php
 
-
 function is_empty_string($string)
 {
     return strlen($string) <= 0;
