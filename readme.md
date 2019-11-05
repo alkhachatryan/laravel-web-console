@@ -24,6 +24,7 @@ Despite the fact that cloud hosting is now growing up and many people use VPS / 
 ## Supported Laravel Versions
 * 5.7.*
 * 5.8.*
+* 6.*
 
 ## Installation
 
