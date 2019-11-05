@@ -48,3 +48,8 @@ All notable changes to `LaravelWebConsole` will be documented in this file.
 ### What is new;
 - Checked the package on Laravel 5.8.*
 - Updated README.md
+
+## Version 2.0
+
+### What is new;
+- Support Laravel 6.*
