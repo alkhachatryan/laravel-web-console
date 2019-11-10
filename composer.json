@@ -11,9 +11,7 @@
     ],
     "homepage": "https://github.com/alkhachatryan/laravel-web-console",
     "keywords": ["Laravel", "LaravelWebConsole"],
-    "require": {
-        "illuminate/support": "^5"
-    },
+
     "require-dev": {
         "phpunit/phpunit": "~7.0",
         "mockery/mockery": "^1.1",
