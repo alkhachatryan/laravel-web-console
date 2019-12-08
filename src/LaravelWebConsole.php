@@ -58,8 +58,10 @@ class LaravelWebConsole
     private function verifyRequest(Request $request){
         $command = explode(' ', $request->input('params')[2])[0];
 
+        $forbidden_commands = config('laravelwebconsole.forbidden_commands');
+
         // Check if the command is in the forbidden commands list
-        if(in_array($command, config('laravelwebconsole.forbidden_commands'))){
+        if($forbidden_commands && in_array($command, $forbidden_commands)){
             $this->has_errors = true;
             $this->output     = "Denied to execute '$command' command";
         }
