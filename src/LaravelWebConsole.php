@@ -40,7 +40,7 @@ class LaravelWebConsole
     {
         $this->verifyRequest($request);
 
-        if($this->has_errors){
+        if ($this->has_errors) {
             echo json_encode(['result' => ['output' => $this->output]]);
             exit(403);
         }
@@ -55,15 +55,16 @@ class LaravelWebConsole
      * @param Request $request
      * @return void
      */
-    private function verifyRequest(Request $request){
+    private function verifyRequest(Request $request)
+    {
         $command = explode(' ', $request->input('params')[2])[0];
 
         $forbidden_commands = config('laravelwebconsole.forbidden_commands');
 
         // Check if the command is in the forbidden commands list
-        if($forbidden_commands && in_array($command, $forbidden_commands)){
+        if ($forbidden_commands && in_array($command, $forbidden_commands)) {
             $this->has_errors = true;
-            $this->output     = "Denied to execute '$command' command";
+            $this->output = "Denied to execute '$command' command";
         }
     }
 }
