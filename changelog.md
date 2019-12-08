@@ -53,3 +53,15 @@ All notable changes to `LaravelWebConsole` will be documented in this file.
 
 ### What is new;
 - Support Laravel 6.*
+
+
+## Version 2.2
+
+### What is new;
+- Set a list of forbidden commands in the config file
+
+
+## Version 2.2.1
+
+### What is new;
+- Security updates
