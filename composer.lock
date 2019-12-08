@@ -2057,7 +2057,7 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.2.1",
+            "version": "v4.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
@@ -2129,7 +2129,7 @@
                 "symfony/contracts": "^1.0.2",
                 "symfony/debug": "~3.4|~4.0",
                 "symfony/event-dispatcher": "~4.1",
-                "symfony/http-foundation": "^4.1.1",
+                "symfony/http-foundation": "^4.2.12",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
@@ -2447,7 +2447,7 @@
                 "symfony/config": "~4.2",
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
-                "symfony/http-foundation": "~3.4|~4.0",
+                "symfony/http-foundation": "4.2.12",
                 "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {
