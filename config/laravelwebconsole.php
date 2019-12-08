@@ -48,4 +48,12 @@ return [
     // Example: 'home_dir' => '/tmp';
     //          'home_dir' => array('user1' => '/home/user1', 'user2' => '/home/user2');
     'home_dir' => '',
+    
+     // These commands cannot be ran
+    // Comment it, if no need to limit the commands
+    'forbidden_commands' => [
+        'rm',
+        'rmdir',
+        'unlink'
+    ]
 ];
