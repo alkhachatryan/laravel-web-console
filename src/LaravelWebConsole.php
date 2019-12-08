@@ -6,14 +6,62 @@ use Illuminate\Http\Request;
 
 class LaravelWebConsole
 {
+    /**
+     * The flag which indicates if the request has errors.
+     *
+     * @var bool
+     */
+    private $has_errors = false;
+
+    /**
+     * The output response of the request.
+     *
+     * @var string
+     */
+    private $output;
+
+    /**
+     * Show the web terminal.
+     *
+     * @return \Illuminate\View\View|\Illuminate\Contracts\View\Factory
+     */
     public static function show()
     {
         return view('webconsole::window');
     }
 
+    /**
+     * Verify and execute the request.
+     *
+     * @param Request $request
+     * @return void
+     */
     public function requestHandler(Request $request)
     {
+        $this->verifyRequest($request);
+
+        if($this->has_errors){
+            echo json_encode(['result' => ['output' => $this->output]]);
+            exit(403);
+        }
+
         $rpc_server = new WebConsoleRPCServer();
         $rpc_server->Execute();
+    }
+
+    /**
+     * Verify the request.
+     *
+     * @param Request $request
+     * @return void
+     */
+    private function verifyRequest(Request $request){
+        $command = explode(' ', $request->input('params')[2])[0];
+
+        // Check if the command is in the forbidden commands list
+        if(in_array($command, config('laravelwebconsole.forbidden_commands'))){
+            $this->has_errors = true;
+            $this->output     = "Denied to execute '$command' command";
+        }
     }
 }
