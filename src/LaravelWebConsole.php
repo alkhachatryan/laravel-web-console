@@ -60,8 +60,8 @@ class LaravelWebConsole
         $in = $request->input('params');
         
         if (! isset($in[2])) {
-+            return;
-+        }
+             return;
+         }
         
         $command = explode(' ', $in[2])[0];
 
