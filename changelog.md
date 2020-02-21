@@ -65,3 +65,8 @@ All notable changes to `LaravelWebConsole` will be documented in this file.
 
 ### What is new;
 - Security updates
+
+## Version 2.2.2
+
+### What is new;
+- Bugfix on login
