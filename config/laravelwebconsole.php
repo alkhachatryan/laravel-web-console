@@ -37,7 +37,7 @@ return [
     // Multi-user credentials (OPTIONAL)
     // Example: 'user' => 'password', 'user1' => 'password1'
     'accounts' => [
-    //  'user' => 'password',
+        //  'user' => 'password',
     ],
 
     // Hash incoming password
@@ -49,7 +49,7 @@ return [
     //          'home_dir' => array('user1' => '/home/user1', 'user2' => '/home/user2');
     'home_dir' => '',
 
-     // These commands cannot be ran
+    // These commands cannot be ran
     // Comment it, if no need to limit the commands
     'forbidden_commands' => [
         'rm',
