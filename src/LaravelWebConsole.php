@@ -57,7 +57,13 @@ class LaravelWebConsole
      */
     private function verifyRequest(Request $request)
     {
-        $command = explode(' ', $request->input('params')[2])[0];
+        $in = $request->input('params');
+
+        if (! isset($in[2])) {
+            return;
+        }
+
+        $command = explode(' ', $in[2])[0];
 
         $forbidden_commands = config('laravelwebconsole.forbidden_commands');
 
