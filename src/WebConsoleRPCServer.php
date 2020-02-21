@@ -144,11 +144,11 @@ class WebConsoleRPCServer extends BaseJsonRpcServer
             if (is_dir($path)) {
                 if (! @chdir($path)) {
                     return ['output' => 'Unable to change directory to current working directory, updating current directory',
-                    'environment' => $this->get_environment(), ];
+                        'environment' => $this->get_environment(), ];
                 }
             } else {
                 return ['output' => 'Current working directory not found, updating current directory',
-                'environment' => $this->get_environment(), ];
+                    'environment' => $this->get_environment(), ];
             }
         }
     }
