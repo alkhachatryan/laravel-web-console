@@ -26,7 +26,7 @@ function execute_command($command)
 
     $process = proc_open($command.' 2>&1', $descriptors, $pipes);
     if (! is_resource($process)) {
-        die("Can't execute command.");
+        exit("Can't execute command.");
     }
 
     // Nothing to push to STDIN
