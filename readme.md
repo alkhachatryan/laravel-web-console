@@ -25,6 +25,7 @@ Despite the fact that cloud hosting is now growing up and many people use VPS / 
 * 5.7.*
 * 5.8.*
 * 6.*
+* 7.*
 
 ## Installation
 
