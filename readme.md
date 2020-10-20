@@ -26,6 +26,7 @@ Despite the fact that cloud hosting is now growing up and many people use VPS / 
 * 5.8.*
 * 6.*
 * 7.*
+* 8.*
 
 ## Installation
 
@@ -57,9 +58,6 @@ Or Via Composer:
 $ composer require alkhachatryan/laravel-web-console
 ```
 
-
-
-
 ## Configuration
 
 Publish the config file
@@ -74,7 +72,7 @@ Publish the config file
 - Edit the /config/laravelwebconsole.php file, create your credentials in .env file.
 
   ```php
-  // Single-user credentials (REQUIRED)
+      // Single-user credentials (REQUIRED)
       'user' => [
           'name' => env('CONSOLE_USER_NAME', 'root'),
           'password' => env('CONSOLE_USER_PASSWORD', 'root')
@@ -88,9 +86,8 @@ This method of custom login is a small addition in the protection.
 Anyway you can disable it. Set no_login value TRUE
 
 ```php
-// Disable login (don't ask for credentials, be careful)
+     // Disable login (don't ask for credentials, be careful)
     'no_login' => true,
-    ]
 ```
 
 ## Usage
