@@ -4,6 +4,8 @@
 [![StyleCI][ico-styleci]][link-styleci]
 ![TESTED OS](https://img.shields.io/badge/Tested%20OS-Linux-brightgreen.svg)
 [![Total Downloads][ico-downloads]][link-downloads]
+![](https://komarev.com/ghpvc/?username=alkhachatryan-laravel-web-console&label=Repo+views&color=brightgreen&style=flat-square)
+
 
 Laravel Web Console is a package for Laravel applications that allow user to connect to the server via browser. 
 
