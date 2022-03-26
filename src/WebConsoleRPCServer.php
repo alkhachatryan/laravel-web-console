@@ -6,36 +6,42 @@ class WebConsoleRPCServer extends BaseJsonRpcServer
 {
     /**
      * Default home dir.
+     *
      * @var
      */
     protected $home_directory = '';
 
     /**
      * Registered accounts array.
+     *
      * @var
      */
     protected $accounts;
 
     /**
      * Selected password hashing algorithm.
+     *
      * @var
      */
     protected $password_hash_algorithm;
 
     /**
      * Login enabled/disabled boolean.
+     *
      * @var
      */
     protected $no_login;
 
     /**
      * Home dir config from settings.
+     *
      * @var
      */
     protected $home_dir_conf;
 
     /**
      * Is webconsole configured?
+     *
      * @var
      */
     protected $is_configured;
