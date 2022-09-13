@@ -1,3 +1,5 @@
+# This repository is archived because the author changes his tech stack, but still available on packagist. You can still fork it and make your required changes.
+
 # LaravelWebConsole
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
