@@ -33,7 +33,7 @@ class LaravelWebConsole
     /**
      * Verify and execute the request.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @return void
      */
     public function requestHandler(Request $request)
@@ -52,7 +52,7 @@ class LaravelWebConsole
     /**
      * Verify the request.
      *
-     * @param Request $request
+     * @param  Request  $request
      * @return void
      */
     private function verifyRequest(Request $request)
